@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/myshape"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <TextView
+        android:id="@+id/view_label"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="6"
+        android:text="Son senkronizasyon tarihi:"
+        android:textColor="#000000"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/last_sync_date_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="8"
+        android:background="#FFFFFF"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/upload_database_button"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dip"
+        android:layout_weight="10"
+        android:drawableLeft="@drawable/wireless_icon"
+        android:text="Hata Bildir"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/wifisini_setting_button"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dip"
+        android:layout_marginTop="10dip" 
+        android:layout_weight="10"
+        android:drawableLeft="@drawable/wireless_icon"
+        android:text="Kablosuz Ayarları"
+        android:textSize="40dp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="56" />
+
+    <Button
+        android:id="@+id/close_config_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dip"
+        android:layout_weight="10"
+        android:drawableLeft="@drawable/close_icon"
+        android:text="Kapat"
+        android:textSize="40dp" />
+
+</LinearLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/myshape"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:background="#ffffff"
+        android:drawableTop="@drawable/telekurye_logo"
+        android:gravity="center"
+        android:text="LOKASYON GÜNCELLE"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_above="@+id/streeett_view"
+        android:background="#FF909090" />
+
+    <LinearLayout
+        android:id="@+id/streeett_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_text"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="2dip"
+                android:layout_weight="50"
+                android:text="Adres:"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/add_extra_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="2dip"
+                android:layout_weight="50"
+                android:drawableLeft="@drawable/put_new_adress_icon"
+                android:text="Adres Ekle/Güncelle" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sokak_adi"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/textbackshape"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/texttable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/streeett_view"
+        android:stretchColumns="0" >
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <!-- second row -->
+
+        <TableRow android:layout_marginTop="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="23dip"
+                android:paddingRight="20dip"
+                android:text="Bina tipi:"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/bina_tipi"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:paddingRight="120dip" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <!-- third row -->
+
+        <TableRow android:layout_marginTop="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="23dip"
+                android:layout_marginRight="20dip"
+                android:text="Bina No:"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:paddingRight="100dip"
+                android:text="Kat Sayısı:"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dip" >
+
+            <EditText
+                android:id="@+id/bina_adi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="18dip"
+                android:layout_marginRight="20dip"
+                android:singleLine="false" />
+
+            <EditText
+                android:id="@+id/kat_sayisi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:numeric="integer" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow android:layout_marginTop="3dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="23dip"
+                android:layout_marginRight="20dip"
+                android:text="Bina Kapasitesi:"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:paddingRight="100dip"
+                android:text="Broşür Sayısı:"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/insan_kapasitesi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="18dip"
+                android:layout_marginRight="20dip"
+                android:numeric="integer" />
+
+            <EditText
+                android:id="@+id/brosur_miktari"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:numeric="integer" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/kamera_button"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:layout_above="@+id/leaflet_status_bar"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/wireless_icon"
+        android:text="Fotoğraf  Çek" />
+
+    <LinearLayout
+        android:id="@+id/leaflet_status_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/stausbarshape"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/fotograf_duzenle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="50"
+            android:drawableLeft="@drawable/wireless_icon"
+            android:text="Foto Düzenle" />
+
+        <Button
+            android:id="@+id/update_kaydet"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="50"
+            android:drawableLeft="@drawable/update_icon"
+            android:text="Kaydet" />
+    </LinearLayout>
+
+</RelativeLayout>

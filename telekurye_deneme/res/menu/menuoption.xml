@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/dist_show_on_map_option"
+        android:icon="@drawable/map"
+        android:title="Harita "/>
+    <item
+        android:id="@+id/dist_end_day_send_option"
+        android:icon="@drawable/wireless_icon"
+        android:title="Gün Sonu"/>
+    <item
+        android:id="@+id/toplu_bildir_option"
+        android:icon="@drawable/multiselect"
+        android:title="Toplu Bildir"/>
+    <item
+        android:id="@+id/search_by_code_option"
+        android:icon="@drawable/search"
+        android:title="Kod İle Ara"/>
+    <item
+        android:id="@+id/dist_select_withBarcode_option"
+        android:icon="@drawable/scanner"
+        android:title="Barkod "/>
+    <item
+        android:id="@+id/help_me_please"
+        android:icon="@drawable/help"
+        android:title="Yardım"/>
+
+</menu>

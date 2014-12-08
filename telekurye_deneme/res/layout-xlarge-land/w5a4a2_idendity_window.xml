@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/myshape" >
+
+    <TextView
+        android:id="@+id/identity_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dip"
+        android:background="#66F87431"
+        android:gravity="center"
+        android:text="TESLİM ALANIN KULLANICI BİLGİLERİ"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    
+
+    <Button
+        android:id="@+id/identiy_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/identity_table"
+        android:layout_below="@+id/custom_addres_edittetxt"
+        android:drawableLeft="@drawable/tamamdir_button"
+        android:text="Tamam" />
+
+</RelativeLayout>

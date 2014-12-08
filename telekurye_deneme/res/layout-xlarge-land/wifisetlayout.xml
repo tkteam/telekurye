@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@drawable/myshape"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+ 
+ <LinearLayout
+  android:id="@+id/arbitrary_linear_layout"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_margin="5dip"
+  android:background="@drawable/rowshape"
+  android:gravity="center"
+  android:weightSum="100"
+  >
+ 
+ 
+
+ 
+  <TextView
+    android:id="@+id/wifi_text_area"
+   android:text="Wifi  aç kapat"
+   android:layout_height="wrap_content"
+   android:layout_width="wrap_content"
+   android:layout_marginLeft="15dp"
+   android:textColor="#ffffff"
+   android:textStyle="bold"
+   android:layout_weight="60"
+   android:drawableLeft="@drawable/big_wireless_icon"
+   />
+   
+   <ToggleButton
+    android:id="@+id/wifi_toggle_button"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+     android:layout_weight="40"
+    android:layout_marginLeft="50dip"
+   />
+    
+     </LinearLayout>
+     
+     <Button
+     android:id="@+id/wifi_preference_button"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:text="Wifi Ayarları"
+     android:layout_marginLeft="5dip"
+      android:layout_below="@+id/arbitrary_linear_layout"
+     android:drawableLeft="@drawable/wifi_modem_set_icon"/>
+     
+     <Button
+     android:id="@+id/wifi_setting_pane_close"
+     android:drawableLeft="@drawable/close_icon"
+     android:layout_below="@+id/arbitrary_linear_layout"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_marginRight="5dip"/>
+  
+</RelativeLayout>

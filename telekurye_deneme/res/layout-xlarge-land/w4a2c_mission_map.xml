@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/myshape"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/leaflet_map_header"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#ffffff"
+        android:drawableTop="@drawable/telekurye_logo"
+        android:gravity="center"
+        android:text="GÖREV HARİTASI"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <com.google.android.maps.MapView
+        android:id="@+id/map1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dip"
+        android:layout_weight="80"
+        android:apiKey="050JlXsyNY77NG1NAmVgmcf0OyfvO1F0jNLeuAw"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/leaflet_map_status_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/stausbarshape"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/sokak_listesi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dip"
+            android:layout_weight="50"
+            android:drawableLeft="@drawable/list_bullets"
+            android:text="Görev Adres Listesi"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/tspsolve"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dip"
+            android:layout_toRightOf="@+id/sokak_listesi"
+            android:layout_weight="50"
+            android:drawableLeft="@drawable/wireless_icon"
+            android:text="Kısa Yol Hesapla"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+</LinearLayout>

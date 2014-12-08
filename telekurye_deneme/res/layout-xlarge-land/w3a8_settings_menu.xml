@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res/com.telekurye.ui"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <com.telekurye.ui2.Statusbar
+        android:id="@+id/menu_kafasi"
+        android:layout_width="match_parent"
+    android:background="@drawable/_button_fb_bg"
+        android:layout_height="50dp"
+        android:layout_weight="5" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#999999" />
+
+    <LinearLayout
+        android:id="@+id/user_name_block"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/_button_twitter_bg"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/btn_geri"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/_button_twitter_bg3"
+            android:drawableLeft="@drawable/wireless_icon"
+            android:drawablePadding="10dp"
+            android:enabled="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Geri"
+            android:textSize="30dp"/>
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+
+        <TextView
+            android:id="@+id/settings_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:background="@drawable/_button_twitter_bg"
+            android:gravity="center"
+            android:text="* AYARLAR *"
+            android:textStyle="italic|bold" 
+            android:textSize="30dp" />
+
+        <View
+            android:id="@+id/view14"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+
+        <TextView
+            android:id="@+id/textView1_head"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/_button_twitter_bg4" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#999999" />
+
+    <LinearLayout
+        android:id="@+id/buttonsarea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="@drawable/_button_fb_bg"
+        android:orientation="vertical"
+        android:padding="20dip"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/wireless_setting_button"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dip"
+            android:layout_weight="25"
+            android:background="@drawable/_button_default_bg3"
+            android:drawableLeft="@drawable/wireless_icon"
+            android:drawablePadding="30dp"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="40dp"
+            android:text="Kablosuz Ayarları"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bluetooth_setting_button"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dip"
+            android:layout_weight="25"
+            android:background="@drawable/_button_default_bg3"
+            android:drawableLeft="@drawable/wireless_icon"
+            android:drawablePadding="30dp"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="40dp"
+            android:text="Bluetooth Ayarları"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

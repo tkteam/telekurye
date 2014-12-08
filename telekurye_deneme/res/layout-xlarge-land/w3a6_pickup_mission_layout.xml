@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/myshape"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/baslikyazisi"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:background="#ffffff"
+        android:drawableTop="@drawable/telekurye_logo"
+        android:gravity="center"
+        android:text="BUGÜNKÜ GÖREVLER"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/pickup_mission_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="3dip"
+        android:listSelector="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/pickup_mission_status_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:background="@drawable/stausbarshape"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/show_on_map_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="2dip"
+            android:drawableLeft="@drawable/wireless_icon"
+            android:text="Haritada Göster"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res/com.telekurye.ui"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <com.telekurye.ui2.Statusbar
+        android:id="@+id/baslikyazisi"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="#383838" />
+
+    <LinearLayout
+        android:id="@+id/choise_block"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="@drawable/head_shaper"
+        android:padding="3dip" >
+
+        <TextView
+            android:id="@+id/distrubtuion_list_header"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="Sonuc Bekleyen Görevler"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/work_status_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/head_shaper"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RadioButton
+                android:id="@+id/incompleted_mission"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="50"
+                android:checked="true"
+                android:text="Tamamlanmayan Görevler"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <RadioButton
+                android:id="@+id/completed_mission"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="50"
+                android:text="Tamamlanan Görevler"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/hybrid_mailing_distribution_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="84"
+        android:cacheColorHint="#0000"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="2dip"
+        android:listSelector="#ffffff" />
+
+</LinearLayout>

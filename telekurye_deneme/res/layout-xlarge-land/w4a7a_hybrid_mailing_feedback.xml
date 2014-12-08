@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res/com.telekurye.ui"
+   android:background="@drawable/myshape"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+    <com.telekurye.ui2.Statusbar
+         android:layout_width="fill_parent"
+         android:layout_height="26dip"
+         android:id="@+id/header_text"
+         android:background="#383838"
+         />
+    
+    <!--  use viewpager instead of  dist_data_table -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/awesomepager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/b_status_bar_layout"
+        android:layout_below="@+id/header_text" />
+  
+ 
+     
+     <LinearLayout
+     android:id="@+id/b_status_bar_layout"
+     android:layout_alignParentBottom="true"
+     android:layout_height="55dip"
+     android:weightSum="100"
+     android:layout_width="fill_parent"
+     android:background="@drawable/stausbarshape">
+     
+     
+     <Button
+     android:id="@+id/hybrid_mailing_send_data"
+     android:text="Yazdır"
+     android:layout_width="wrap_content"
+     android:layout_weight="50"
+     android:layout_gravity="center_vertical"
+     android:layout_height="50dip"
+     android:layout_marginTop="2dp"
+     android:drawableLeft="@drawable/hybrid_mailing"
+     />
+      <Button
+     android:id="@+id/btn_feedback_kaydet"
+     android:layout_width="wrap_content"
+     android:layout_gravity="center_vertical"
+     android:layout_weight="50"
+     android:layout_marginTop="2dp"
+     android:layout_height="50dip"
+     android:text="Kaydet"
+     android:drawableLeft="@drawable/update_icon"
+     />
+   
+   </LinearLayout>
+
+     <TableLayout
+         android:id="@+id/dist_data_table"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/header_text"
+         android:stretchColumns="1" >
+
+         <View
+             android:layout_height="1dip"
+             android:background="#FF909090" />
+
+         <TableRow
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="3dip"
+                 android:layout_marginLeft="3dip"
+                 android:layout_marginTop="3dip"
+                 android:text="Görev kodu:"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+
+             <TextView
+                 android:id="@+id/unique_code"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="3dip"
+                 android:layout_weight="1"
+                 android:background="#ffffff"
+                 android:textColor="#000000" />
+         </TableRow>
+
+         <View
+             android:id="@+id/vwAdSoyad"
+             android:layout_height="1dip"
+             android:background="#FF909090" />
+
+         <TableRow
+             android:id="@+id/trAdSoyad"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="3dip"
+                 android:layout_marginLeft="3dip"
+                 android:layout_marginTop="3dip"
+                 android:text="Ad Soyad:"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+
+             <TextView
+                 android:id="@+id/feed_name_text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="3dip"
+                 android:layout_weight="1"
+                 android:background="#ffffff"
+                 android:maxLines="3"
+                 android:singleLine="false"
+                 android:textColor="#000000" />
+         </TableRow>
+
+         <View
+             android:id="@+id/vwFirmaAdi"
+             android:layout_height="1dip"
+             android:background="#FF909090" />
+
+         <TableRow
+             android:id="@+id/trFirmaAdi"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="3dip"
+                 android:layout_marginLeft="3dip"
+                 android:layout_marginTop="3dip"
+                 android:text="Firma adı:"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+
+             <TextView
+                 android:id="@+id/company_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="3dip"
+                 android:layout_weight="1"
+                 android:background="#ffffff"
+                 android:textColor="#000000" />
+         </TableRow>
+
+         <View
+             android:layout_height="1dip"
+             android:background="#FF909090" />
+
+         <TableRow
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="3dip"
+                 android:layout_marginLeft="3dip"
+                 android:layout_marginTop="3dip"
+                 android:text="Adres:"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+
+             <TextView
+                 android:id="@+id/feed_dist_adress_text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="3dip"
+                 android:layout_weight="1"
+                 android:background="#ffffff"
+                 android:singleLine="false"
+                 android:textColor="#000000" />
+         </TableRow>
+
+         <View
+             android:id="@+id/vwRandevu"
+             android:layout_height="1dip"
+             android:background="#FF909090" />
+
+         <TableRow
+             android:id="@+id/trRandevu"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="3dip"
+                 android:layout_marginLeft="3dip"
+                 android:layout_marginTop="3dip"
+                 android:text="Randevu:"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+
+             <TextView
+                 android:id="@+id/feed_appointment_text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="3dip"
+                 android:layout_marginBottom="3dip"
+                 android:layout_marginRight="3dip"
+                 android:layout_marginTop="3dip"
+                 android:layout_weight="1"
+                 android:background="#ffffff"
+                 android:textColor="#000000" />
+         </TableRow>
+
+         <View
+             android:layout_height="1dip"
+             android:background="#FF909090" />
+
+         <TableRow
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="3dip"
+                 android:layout_marginLeft="3dip"
+                 android:layout_marginTop="3dip"
+                 android:text="Dağıtım Tipi:  "
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+
+             <TextView
+                 android:id="@+id/feed_dist_product"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="3dip"
+                 android:layout_weight="1"
+                 android:background="#ffffff"
+                 android:textColor="#000000" />
+         </TableRow>
+
+         <View
+             android:id="@+id/vwDokumanDurumu"
+             android:layout_height="1dip"
+             android:background="#FF909090" />
+
+         <TableRow
+             android:id="@+id/trDokumanDurumu"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="3dip"
+                 android:layout_marginLeft="3dip"
+                 android:layout_marginTop="3dip"
+                 android:text="Döküman durumu:"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+
+             <TextView
+                 android:id="@+id/transfer_info_text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="3dip"
+                 android:layout_weight="1"
+                 android:background="#ffffff"
+                 android:textColor="#000000" />
+         </TableRow>
+
+         <View
+             android:layout_height="1dip"
+             android:background="#FF909090" />
+     </TableLayout>
+  
+</RelativeLayout>

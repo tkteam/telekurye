@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res/com.telekurye.ui"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:background="@drawable/_btn_mavi_kirmizi"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgFullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp" 
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="44dp"
+            android:paddingRight="44dp" >
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edittextback"
+                android:drawableLeft="@drawable/_user"
+                android:ems="10"
+                android:hint="Kullanıcı Adı"
+                android:singleLine="true"
+                android:textColorHint="#696969"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="12"
+            android:paddingBottom="10dp"
+            android:paddingLeft="44dp"
+            android:paddingRight="44dp"
+            android:paddingTop="10dp" >
+
+            <EditText
+                android:id="@+id/user_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edittextback"
+                android:drawableLeft="@drawable/_password"
+                android:ems="10"
+                android:hint="Parola"
+                android:inputType="number"
+                android:password="true"
+                android:singleLine="true"
+                android:textColorHint="#696969"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="44dp"
+            android:paddingRight="44dp"
+            android:paddingTop="10dp" >
+
+            <Button
+                android:id="@+id/login_button"
+                style="@style/ButtonText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/_btn_kirmizi_yesil"
+                android:drawablePadding="100dp"
+                android:gravity="center"
+                android:text="Giriş"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp" >
+
+        <CheckBox
+            android:id="@+id/check_remember_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="50"
+            android:text="Beni Hatırla"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <CheckBox
+            android:id="@+id/check_test_server"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="50"
+            android:text="Test"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+ 
+
+</LinearLayout>

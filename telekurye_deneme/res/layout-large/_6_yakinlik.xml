@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <Button
+        android:id="@+id/btnYakinlik1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="16"
+        android:background="@drawable/_btn_yesil_mavi"
+        android:text="KENDİSİ"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/btnYakinlik2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:text="SEKRETER"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnYakinlik3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:text="FİRMA ÇALIŞANI"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/btnYakinlik5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:text="FİRMA YETKİLİSİ"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnYakinlik7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:text="FİRMA GÜVENLİK ELEMANI"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/btnYakinlik8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:text="MUHABERAT"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnYakinlik10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:text="DANIŞMA"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/btnYakinlik11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:text="BİRİM MÜDÜRÜ"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnYakinlik12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:text="MUHASEBE SORUMLUSU"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/btnYakinlik13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:text="BANKA ŞUBE GÖREVLİSİ"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnYakinlik14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:text="HANEDEKİ ŞAHIS"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/btnYakinlik15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:text="1.DERECE YAKIN"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnYakinlik16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:text="KOMŞU"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

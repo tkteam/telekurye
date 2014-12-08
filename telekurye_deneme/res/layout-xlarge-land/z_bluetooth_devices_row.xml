@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btooth_device_row_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dip"
+    android:layout_marginLeft="20dp"
+    android:focusable="false"
+     >
+
+    <ImageView
+        android:id="@+id/device_connectivity_image"
+        android:layout_width="22dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/btooth_logo_unpaired"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/device_name_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:focusable="false" />
+ 
+</LinearLayout>

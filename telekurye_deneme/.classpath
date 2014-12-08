@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/android-support-v4.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/AndroidXMLDoc2String.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/commons-codec-1.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/commons-io-2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/commons-logging-1.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/fluent-hc-4.3.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/httpclient-4.3.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/httpclient-cache-4.3.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/httpcore-4.3.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/httpmime-4.3.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/ormlite-android-4.48.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/ormlite-core-4.48.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/libGoogleAnalyticsServices.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/splunk-mint-4.0.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sefagurel/workspace/work/telekurye_deneme/libs/gson-2.3.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent" 
+  	android:layout_height="fill_parent" >
+  	
+    <com.telekurye.ui2.Statusbar
+         android:layout_width="fill_parent"
+         android:layout_height="26dip"
+         android:id="@+id/baslikyazisi"
+         android:background="#383838"
+   	/>
+     
+   	<LinearLayout
+    	android:id="@+id/choise_block"
+       	android:layout_width="fill_parent"
+       	android:layout_height="40dp"
+       	android:layout_below="@+id/baslikyazisi"
+       	android:background="@drawable/head_shaper"
+       	android:padding="3dip" >
+
+        	<TextView
+	     		android:id="@+id/bluetooth_conneciton_manager_header"
+	     		android:text="Yazıcılar" 
+	     		android:gravity="center"
+	     		android:textColor="#000000"
+	     		android:textSize="15sp"
+	     		android:layout_width="fill_parent"
+	     		android:layout_height="fill_parent"
+	     		android:visibility="visible"/>    
+   	</LinearLayout>
+
+  	<ListView
+      android:id="@+id/bluetooth_device_list"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_below="@+id/choise_block"
+      android:layout_above="@+id/a_status_bar_layout"
+      android:cacheColorHint="#0000"
+      android:divider="@drawable/list_divider"
+      android:dividerHeight="2dip"
+  	/>
+  	<LinearLayout
+      	android:id="@+id/a_status_bar_layout"
+      	android:layout_alignParentBottom="true"
+      	android:layout_height="wrap_content"      	
+      	android:layout_width="fill_parent"
+      	android:gravity="center">      	
+  		
+  		<ImageButton
+  	    	android:id="@+id/ibtn_bluetooth_doDiscovery"
+  	    	android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"      		
+      		android:layout_below="@+id/bluetooth_device_list"      		
+      		android:src="@drawable/refresh"      		
+  		/>
+  	</LinearLayout>
+  	
+</RelativeLayout>

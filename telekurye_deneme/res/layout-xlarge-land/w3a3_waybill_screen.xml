@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/myshape"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <TextView
+        android:id="@+id/baslikyazisi"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:background="#ffffff"
+        android:drawableTop="@drawable/telekurye_logo"
+        android:gravity="center"
+        android:text="İRSALİYE ONAY SAYFASI"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/id10"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#FF909090" />
+
+    <LinearLayout
+        android:id="@+id/basic_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:weightSum="100" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="20"
+            android:background="#66F87431"
+            android:gravity="center"
+            android:text="Barkod:"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/w_barcode_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="60"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/x_barcode_verify_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="20"
+            android:drawableLeft="@drawable/barcodereadericon"
+            android:text="Barkod"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/id11"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#FF909090" />
+
+    <ListView
+        android:id="@+id/way_bill_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dip"
+        android:layout_weight="70"
+        android:listSelector="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/status_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/stausbarshape"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/btn_toplu_al"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dip"
+            android:layout_weight="50"
+            android:drawableLeft="@drawable/all_barcode_icon"
+            android:text="Toplu Al"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/wayybill_approve"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="2dip"
+            android:layout_weight="50"
+            android:drawableLeft="@drawable/save_to_database"
+            android:text="Tamam"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+</LinearLayout>

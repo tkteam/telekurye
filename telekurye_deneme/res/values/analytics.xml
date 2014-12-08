@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- set your tracker id -->
+    <string name="ga_trackingId">UA-56515325-1</string>
+
+    <!-- Enable automatic activity tracking -->
+
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!-- Enable automatic exception tracking -->
+
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+   <ListPreference
+           android:title="Veri Giriş Ekranı"
+           android:summary="Buradan Veri giriş yönteminizi belirtebilirsiniz"
+           android:key="value"
+           android:defaultValue="1"
+           android:negativeButtonText="Vazgeç"
+           android:entries="@array/secim"
+           android:entryValues="@array/secim_values" />   
+   
+</PreferenceScreen>

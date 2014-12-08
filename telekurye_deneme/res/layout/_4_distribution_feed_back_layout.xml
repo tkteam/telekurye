@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/button1_geri7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="33"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:drawableTop="@drawable/back_icon2"
+            android:gravity="center"
+            android:paddingTop="11dp"
+            android:textColor="@color/tvtext"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView1_head7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="34"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:gravity="center"
+            android:text=" Görev  "
+            android:textColor="@color/tvback"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_feedback_kaydet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="33"
+            android:background="@drawable/_btn_kirmizi_mavi"
+            android:drawableTop="@drawable/save5"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:textColor="@color/tvtext"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <!-- use viewpager instead of dist_data_table -->
+
+    <TabHost
+        android:id="@+id/tabSecim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/_btn_mavi_kirmizi"
+                android:gravity="top"
+                android:weightSum="1" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical"
+                    android:weightSum="100" >
+
+                    <ScrollView
+                        android:id="@+id/scrollView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="100" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="100"
+                                android:minHeight="@dimen/phone_form_min_height" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="45"
+                                    android:background="@color/tvback2"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Görev kodu :"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+
+                                <TextView
+                                    android:id="@+id/unique_code"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="55"
+                                    android:background="@color/tvback"
+                                    android:gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="100"
+                                android:minHeight="@dimen/phone_form_min_height" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="45"
+                                    android:background="@color/tvback2"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Ad Soyad :"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+
+                                <TextView
+                                    android:id="@+id/feed_name_text"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="55"
+                                    android:background="@color/tvback"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="3"
+                                    android:padding="5dp"
+                                    android:singleLine="false"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="100"
+                                android:minHeight="@dimen/phone_form_min_height" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="45"
+                                    android:background="@color/tvback2"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Firma adı :"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+
+                                <TextView
+                                    android:id="@+id/company_name"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="55"
+                                    android:background="@color/tvback"
+                                    android:gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="100"
+                                android:minHeight="@dimen/phone_form_min_height" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="45"
+                                    android:background="@color/tvback2"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Adres :"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+
+                                <TextView
+                                    android:id="@+id/feed_dist_adress_text"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="55"
+                                    android:background="@color/tvback"
+                                    android:gravity="center_vertical"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="3dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="10dp"
+                                    android:singleLine="false"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="100"
+                                android:minHeight="@dimen/phone_form_min_height" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="45"
+                                    android:background="@color/tvback2"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Randevu :"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+
+                                <TextView
+                                    android:id="@+id/feed_appointment_text"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="55"
+                                    android:background="@color/tvback"
+                                    android:gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="100"
+                                android:minHeight="@dimen/phone_form_min_height" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="45"
+                                    android:background="@color/tvback2"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Dağıtım Tipi :"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+
+                                <TextView
+                                    android:id="@+id/feed_dist_product"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="55"
+                                    android:background="@color/tvback"
+                                    android:gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="100"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:background="@color/tvback2"
+                                    android:gravity="center"
+                                    android:minHeight="50dp"
+                                    android:paddingLeft="10dp"
+                                    android:text="Döküman durumu :"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+
+                                <TextView
+                                    android:id="@+id/transfer_info_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:background="@color/tvback"
+                                    android:gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="534dp"
+                        android:layout_weight="0.66"
+                        android:orientation="vertical"
+                        android:weightSum="100" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="50dp"
+                            android:paddingRight="50dp"
+                            android:weightSum="100" >
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="83.02" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_fotografCek"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/_btn_mavi_kirmizi"
+                        android:drawableLeft="@drawable/w_fotocek"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="20dp"
+                        android:text="Fotoğraf Çek"
+                        android:textColor="@color/tvback"
+                        android:textSize="@dimen/phonefont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical" >
+
+                    <ScrollView
+                        android:id="@+id/scrollView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.94" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.94"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/end_pnt_status_block"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/phone_form_min_height"
+                                android:weightSum="100" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="45"
+                                    android:background="@color/tvback2"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Teslimat Durumu :"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+
+                                <Button
+                                    android:id="@+id/btnTeslimatDurumu"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="55"
+                                    android:background="@color/tvback"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Seçiniz  >>"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/yakinlik_derecesi_status_block"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/phone_form_min_height"
+                                android:weightSum="100" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="45"
+                                    android:background="@color/tvback2"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Yakınlık Derecesi :"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+
+                                <Button
+                                    android:id="@+id/btn_yakinlik_derecesi"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="55"
+                                    android:background="@color/tvback"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Seçiniz  >>"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/phone_form_min_height"
+                                android:weightSum="100" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="45"
+                                    android:background="@color/tvback2"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Adı :  "
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+
+                                <EditText
+                                    android:id="@+id/etIdentityName"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="55"
+                                    android:background="@color/tvback"
+                                    android:ems="10"
+                                    android:gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" >
+
+                                    <requestFocus />
+                                </EditText>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/phone_form_min_height"
+                                android:weightSum="100" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="45"
+                                    android:background="@color/tvback2"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Soyadı :  "
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+
+                                <EditText
+                                    android:id="@+id/identity_surname"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="55"
+                                    android:background="@color/tvback"
+                                    android:ems="10"
+                                    android:gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/phone_form_min_height"
+                                android:weightSum="100" >
+
+                                <TextView
+                                    android:id="@+id/identity_spinner_describer_text_view"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="45"
+                                    android:background="@color/tvback2"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Kimlik Tipi :  "
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+
+                                <Button
+                                    android:id="@+id/btnKimlikTipi"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="55"
+                                    android:background="@color/tvback"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Seçiniz  >>"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/phone_form_min_height"
+                                android:weightSum="100" >
+
+                                <TextView
+                                    android:id="@+id/identiy_number_describer_text_view"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="45"
+                                    android:background="@color/tvback2"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Kimlik No :  "
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+
+                                <EditText
+                                    android:id="@+id/identity_number"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="55"
+                                    android:background="@color/tvback"
+                                    android:digits="0123456789"
+                                    android:ems="10"
+                                    android:gravity="center_vertical"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="11"
+                                    android:padding="5dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/phone_form_min_height"
+                                android:weightSum="100" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="45"
+                                    android:background="@color/tvback2"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:text="Telefon Numarası:  "
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+
+                                <EditText
+                                    android:id="@+id/relation_phone"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="55"
+                                    android:background="@color/tvback"
+                                    android:digits="0123456789"
+                                    android:ems="10"
+                                    android:gravity="center_vertical"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="10"
+                                    android:padding="5dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/tvtext"
+                                    android:textSize="@dimen/phone_form_font" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
